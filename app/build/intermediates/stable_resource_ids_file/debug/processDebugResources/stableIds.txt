@@ -1,4 +1,5 @@
-com.clink.app:layout/url_chip_dialog = 0x7f030000
 com.clink.app:id/urlText = 0x7f020000
+com.clink.app:layout/url_chip_dialog = 0x7f030000
+com.clink.app:drawable/url_chip_background = 0x7f010002
 com.clink.app:drawable/ic_launcher_round = 0x7f010001
 com.clink.app:drawable/ic_launcher = 0x7f010000

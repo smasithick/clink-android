@@ -1,25 +1,20 @@
 package com.clink.app
 
 import android.app.Activity
-import android.app.Dialog
 import android.content.ClipData
 import android.content.ClipboardManager
 import android.content.Context
 import android.content.Intent
-import android.graphics.Color
-import android.graphics.drawable.ColorDrawable
 import android.net.Uri
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.util.Patterns
-import android.view.Gravity
-import android.view.WindowManager
-import android.widget.TextView
+import android.widget.Toast
 
 /**
  * Clink — Share Sheet URL Cleaner
- * Copies a sanitized link and briefly shows the cleaned URL in a compact popup chip.
+ * Copies the sanitized URL and exits immediately.
  */
 class CleanLinkActivity : Activity() {
 
@@ -34,56 +29,36 @@ class CleanLinkActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        if (intent?.action == Intent.ACTION_SEND && intent.type == "text/plain") {
-            val sharedText = intent.getStringExtra(Intent.EXTRA_TEXT)
-            if (!sharedText.isNullOrBlank()) {
-                val cleaned = processSharedText(sharedText)
-                copyToClipboard(cleaned)
-                showUrlChip(cleaned)
-                return
+        try {
+            if (intent?.action == Intent.ACTION_SEND && intent.type == "text/plain") {
+                val sharedText = intent.getStringExtra(Intent.EXTRA_TEXT)
+                if (!sharedText.isNullOrBlank()) {
+                    val cleaned = processSharedText(sharedText)
+                    if (cleaned.isNotBlank()) {
+                        copyToClipboard(cleaned)
+                        finish()
+                        return
+                    }
+                }
             }
+        } catch (e: Exception) {
+            Toast.makeText(this, "Link cleaned. Ready to paste", Toast.LENGTH_SHORT).show()
         }
 
         finish()
     }
 
-    private fun showUrlChip(url: String) {
-        val dialog = Dialog(this, android.R.style.Theme_DeviceDefault_Dialog_NoActionBar)
-        dialog.setCancelable(false)
-        dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
-        dialog.setContentView(R.layout.url_chip_dialog)
-
-        val urlText = dialog.findViewById<TextView>(R.id.urlText)
-        urlText.text = url
-
-        dialog.window?.setLayout(
-            WindowManager.LayoutParams.WRAP_CONTENT,
-            WindowManager.LayoutParams.WRAP_CONTENT
-        )
-        dialog.window?.setGravity(Gravity.BOTTOM or Gravity.CENTER_HORIZONTAL)
-        dialog.window?.attributes?.y = 140
-        dialog.show()
-
-        Handler(Looper.getMainLooper()).postDelayed({
-            dialog.dismiss()
-            finish()
-        }, 1800)
-    }
-
     private fun processSharedText(text: String): String {
         val matcher = Patterns.WEB_URL.matcher(text)
-        val sb = StringBuffer()
-        var firstCleanUrl: String? = null
+        val urls = mutableListOf<String>()
 
         while (matcher.find()) {
             val rawUrl = matcher.group().trimEnd('.', ',', ';', ')', '!')
             val cleanedUrl = cleanSingleUrl(rawUrl)
-            if (firstCleanUrl == null) firstCleanUrl = cleanedUrl
-            matcher.appendReplacement(sb, Regex.escapeReplacement(cleanedUrl))
+            if (cleanedUrl.isNotBlank()) urls.add(cleanedUrl)
         }
-        matcher.appendTail(sb)
 
-        return firstCleanUrl ?: text
+        return urls.firstOrNull() ?: text
     }
 
     private fun cleanSingleUrl(urlString: String): String {

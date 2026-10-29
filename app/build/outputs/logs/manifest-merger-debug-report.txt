@@ -36,7 +36,7 @@ ADDED from C:\Users\smasi\Downloads\Clink-Android-Project\app\src\main\AndroidMa
 	android:exported
 		ADDED from C:\Users\smasi\Downloads\Clink-Android-Project\app\src\main\AndroidManifest.xml:13:13-36
 	android:theme
-		ADDED from C:\Users\smasi\Downloads\Clink-Android-Project\app\src\main\AndroidManifest.xml:14:13-70
+		ADDED from C:\Users\smasi\Downloads\Clink-Android-Project\app\src\main\AndroidManifest.xml:14:13-59
 	android:name
 		ADDED from C:\Users\smasi\Downloads\Clink-Android-Project\app\src\main\AndroidManifest.xml:12:13-46
 intent-filter#action:name:android.intent.action.SEND+category:name:android.intent.category.DEFAULT+data:mimeType:text/plain

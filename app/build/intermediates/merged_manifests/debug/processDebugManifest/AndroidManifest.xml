@@ -21,7 +21,7 @@
             android:excludeFromRecents="true"
             android:exported="true"
             android:noHistory="true"
-            android:theme="@android:style/Theme.DeviceDefault.Dialog" >
+            android:theme="@android:style/Theme.NoDisplay" >
             <intent-filter android:label="Clink (Clean &amp; Copy)" >
                 <action android:name="android.intent.action.SEND" />
 

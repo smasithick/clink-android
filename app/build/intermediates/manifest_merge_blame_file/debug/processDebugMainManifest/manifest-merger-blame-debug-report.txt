@@ -32,8 +32,8 @@
 22-->C:\Users\smasi\Downloads\Clink-Android-Project\app\src\main\AndroidManifest.xml:13:13-36
 23            android:noHistory="true"
 23-->C:\Users\smasi\Downloads\Clink-Android-Project\app\src\main\AndroidManifest.xml:16:13-37
-24            android:theme="@android:style/Theme.DeviceDefault.Dialog" >
-24-->C:\Users\smasi\Downloads\Clink-Android-Project\app\src\main\AndroidManifest.xml:14:13-70
+24            android:theme="@android:style/Theme.NoDisplay" >
+24-->C:\Users\smasi\Downloads\Clink-Android-Project\app\src\main\AndroidManifest.xml:14:13-59
 25            <intent-filter android:label="Clink (Clean &amp; Copy)" >
 25-->C:\Users\smasi\Downloads\Clink-Android-Project\app\src\main\AndroidManifest.xml:18:13-22:29
 25-->C:\Users\smasi\Downloads\Clink-Android-Project\app\src\main\AndroidManifest.xml:18:28-68
