@@ -2,7 +2,6 @@
 
 ![GitHub release](https://img.shields.io/github/v/release/your-username/your-repo?include_prereleases)
 
-[![Donate with PayPal](https://img.shields.io/badge/Donate_with-PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/smasithick)  
 [![Donate with Buy Me a Coffee](https://img.shields.io/badge/Donate_with-Buy_Me_a_Coffee-FFDD00?style=for-the-badge&logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/smasithick)
 
 Clink is a lightweight Android app that sanitizes shared links before they hit your clipboard.
