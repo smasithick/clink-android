@@ -28,6 +28,9 @@ jobs:
         with:
           gradle-version: '8.6'
 
+      - name: Make Gradle wrapper executable
+        run: chmod +x ./gradlew
+
       - name: Build Release APK
         run: ./gradlew assembleDebug --no-daemon
 
