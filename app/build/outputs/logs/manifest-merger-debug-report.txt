@@ -1,0 +1,65 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\smasi\Downloads\Clink-Android-Project\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\smasi\Downloads\Clink-Android-Project\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\smasi\Downloads\Clink-Android-Project\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\smasi\Downloads\Clink-Android-Project\app\src\main\AndroidManifest.xml:2:1-27:12
+	package
+		INJECTED from C:\Users\smasi\Downloads\Clink-Android-Project\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\smasi\Downloads\Clink-Android-Project\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\smasi\Downloads\Clink-Android-Project\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\smasi\Downloads\Clink-Android-Project\app\src\main\AndroidManifest.xml:2:11-69
+application
+ADDED from C:\Users\smasi\Downloads\Clink-Android-Project\app\src\main\AndroidManifest.xml:4:5-25:19
+INJECTED from C:\Users\smasi\Downloads\Clink-Android-Project\app\src\main\AndroidManifest.xml:4:5-25:19
+	android:extractNativeLibs
+		INJECTED from C:\Users\smasi\Downloads\Clink-Android-Project\app\src\main\AndroidManifest.xml
+	android:supportsRtl
+		ADDED from C:\Users\smasi\Downloads\Clink-Android-Project\app\src\main\AndroidManifest.xml:9:9-35
+	android:label
+		ADDED from C:\Users\smasi\Downloads\Clink-Android-Project\app\src\main\AndroidManifest.xml:6:9-30
+	android:roundIcon
+		ADDED from C:\Users\smasi\Downloads\Clink-Android-Project\app\src\main\AndroidManifest.xml:8:9-56
+	android:icon
+		ADDED from C:\Users\smasi\Downloads\Clink-Android-Project\app\src\main\AndroidManifest.xml:7:9-45
+	android:allowBackup
+		ADDED from C:\Users\smasi\Downloads\Clink-Android-Project\app\src\main\AndroidManifest.xml:5:9-35
+activity#com.clink.app.CleanLinkActivity
+ADDED from C:\Users\smasi\Downloads\Clink-Android-Project\app\src\main\AndroidManifest.xml:11:9-24:20
+	android:excludeFromRecents
+		ADDED from C:\Users\smasi\Downloads\Clink-Android-Project\app\src\main\AndroidManifest.xml:15:13-46
+	android:noHistory
+		ADDED from C:\Users\smasi\Downloads\Clink-Android-Project\app\src\main\AndroidManifest.xml:16:13-37
+	android:exported
+		ADDED from C:\Users\smasi\Downloads\Clink-Android-Project\app\src\main\AndroidManifest.xml:13:13-36
+	android:theme
+		ADDED from C:\Users\smasi\Downloads\Clink-Android-Project\app\src\main\AndroidManifest.xml:14:13-70
+	android:name
+		ADDED from C:\Users\smasi\Downloads\Clink-Android-Project\app\src\main\AndroidManifest.xml:12:13-46
+intent-filter#action:name:android.intent.action.SEND+category:name:android.intent.category.DEFAULT+data:mimeType:text/plain
+ADDED from C:\Users\smasi\Downloads\Clink-Android-Project\app\src\main\AndroidManifest.xml:18:13-22:29
+	android:label
+		ADDED from C:\Users\smasi\Downloads\Clink-Android-Project\app\src\main\AndroidManifest.xml:18:28-68
+action#android.intent.action.SEND
+ADDED from C:\Users\smasi\Downloads\Clink-Android-Project\app\src\main\AndroidManifest.xml:19:17-69
+	android:name
+		ADDED from C:\Users\smasi\Downloads\Clink-Android-Project\app\src\main\AndroidManifest.xml:19:25-66
+category#android.intent.category.DEFAULT
+ADDED from C:\Users\smasi\Downloads\Clink-Android-Project\app\src\main\AndroidManifest.xml:20:17-76
+	android:name
+		ADDED from C:\Users\smasi\Downloads\Clink-Android-Project\app\src\main\AndroidManifest.xml:20:27-73
+data
+ADDED from C:\Users\smasi\Downloads\Clink-Android-Project\app\src\main\AndroidManifest.xml:21:17-55
+	android:mimeType
+		ADDED from C:\Users\smasi\Downloads\Clink-Android-Project\app\src\main\AndroidManifest.xml:21:23-52
+uses-sdk
+INJECTED from C:\Users\smasi\Downloads\Clink-Android-Project\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\smasi\Downloads\Clink-Android-Project\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\smasi\Downloads\Clink-Android-Project\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\smasi\Downloads\Clink-Android-Project\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\smasi\Downloads\Clink-Android-Project\app\src\main\AndroidManifest.xml

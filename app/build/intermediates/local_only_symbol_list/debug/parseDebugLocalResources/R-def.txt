@@ -1,0 +1,6 @@
+R_DEF: Internal format may change without notice
+local
+drawable ic_launcher
+drawable ic_launcher_round
+id urlText
+layout url_chip_dialog

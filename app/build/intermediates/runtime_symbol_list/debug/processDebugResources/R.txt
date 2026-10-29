@@ -1,0 +1,4 @@
+int drawable ic_launcher 0x7f010000
+int drawable ic_launcher_round 0x7f010001
+int id urlText 0x7f020000
+int layout url_chip_dialog 0x7f030000
